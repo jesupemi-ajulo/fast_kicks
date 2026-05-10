@@ -17,19 +17,27 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <nav class="nav">
-      <div class="nav-logo">Fresh Kicks</div>
+      <div class="nav-logo">Fresh Kicks <span>.</span></div>
       <div class="nav-links">
         <ul>
           <li><a href="">Home</a></li>
@@ -40,8 +48,10 @@
         </ul>
       </div>
       <div class="nav-actions">
-        <button><a href="">Sign In</a></button>
-        <i class="ri-shopping-bag-3-line"></i>
+        <button class="navbtn"><a href="">Sign In</a></button>
+        <div class="nav-cart">
+          <i class="ri-shopping-bag-line"></i> <span>0</span>
+        </div>
       </div>
       <div class="harmburger mobile-nav" style="display: none">
         <i class="ri-menu-line"></i>
@@ -56,7 +66,59 @@
       </div>
     </nav>
     <section class="hero">
-      <div class="hero-heading"></div>
+      <div class="hero-heading">
+        <i class="ri-shining-2-fill sparkle"></i>
+        <p>Step into Style. Stay Ahead</p>
+        <div class="premium-badge">
+          <svg viewBox="0 0 100 100">
+            <circle
+              cx="50"
+              cy="50"
+              r="48"
+              fill="none"
+              stroke="#001d3d"
+              stroke-width="0.5"
+            />
+            <circle
+              cx="50"
+              cy="50"
+              r="38"
+              fill="none"
+              stroke="#001d3d"
+              stroke-width="1"
+              stroke-dasharray="2,2"
+            />
+            <defs>
+              <path id="topPath" d="M 20,50 a 30,30 0 1,1 60,0" />
+              <path id="bottomPath" d="M 20,50 a 30, 30 0 1,0 60,0" />
+            </defs>
+            <text class="badge-text">
+              <textPath href="#topPath" startOffset="50%" text-anchor="middle">
+                Premium Quality
+              </textPath>
+            </text>
+            <text class="badge-text">
+              <textPath
+                href="#bottomPath"
+                startOffset="50%"
+                text-anchor="middle"
+              >
+                Guaranteed
+              </textPath>
+            </text>
+            <text x="50" y="48" class="center-percent" text-anchor="middle">
+              100%
+            </text>
+            <text x="50" y="58" class="center-sub" text-anchor="middle">
+              Authentic
+            </text>
+            <path
+              d="M 50,32 L 51,34 L 53, 34 L 51.5, 35.5 L 52, 37.5 L 50, 36.5 L 48, 37.5 L 48.5, 35.5 L 47, 34 L 49,34 Z"
+              fill="#001d3d"
+            />
+          </svg>
+        </div>
+      </div>
       <h1>Fresh Kicks</h1>
       <div class="hero-container">
         <div class="left-content">
@@ -67,69 +129,96 @@
           </p>
           <button>Shop Now</button>
         </div>
-        <div>
-          <div class="glow"></div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/imgs/images (40).png" alt="" /></div>
-              <div class="swiper-slide"><img src="./assets/imgs/51s68jlLZlL._AC_SL1000_.png" alt="" /></div>
-              <div class="swiper-slide"><img src="./assets/imgs/usama-akram-s-gYAbQToXk-unsplash(1).png" alt="" /></div>
-              <div class="swiper-slide"><img src="./assets/imgs/piyush-haswani-asD3pM3lSkA-unsplash(1).png" alt="" /></div>
+        <div class="swiper myswiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assets/imgs/ox-street-BWPqHZBhMVA-unsplash(1).png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/51s68jlLZlL._AC_SL1000_.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/imgs/usama-akram-s-gYAbQToXk-unsplash(1).png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/395205-01.png" alt="" />
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
         <div class="right-content">
-          <div class="badge"><span>100% Authentic</span></div>
-          <div class="badge"><span>Fast Shipping</span></div>
-          <div class="badge"><span>Easy Returns</span></div>
+          <div class="badge">
+            <i class="ri-shield-check-line"></i><span>100% Authentic</span>
+          </div>
+          <div class="badge">
+            <i class="ri-truck-line"></i><span>Fast Shipping</span>
+          </div>
+          <div class="badge">
+            <i class="ri-loop-right-fill"></i><span>Easy Returns</span>
+          </div>
           <div class="price">
             <p>Starting at</p>
             <h2>$129.99</h2>
           </div>
         </div>
       </div>
+      <div class="glow"></div>
     </section>
     <section class="stats">
-      <div class="stats-text stats-circle">
-        <p>Trusted by sneakerheads worldwide</p>
+      <div class="stats-text">
+        <h2>Trusted by sneakerheads worldwide</h2>
         <p>
           Delivering style,quality, and authenticity to the sneaker community
         </p>
       </div>
       <div class="stat-cards">
-        <div class="stat-card stats-circle">
-          <p>10K+</p>
-          <p>Happy Customers</p>
+        <div class="stats-circle">
+          <div class="stat-card">
+            <h3>10K+</h3>
+            <p>Happy Customers</p>
+          </div>
         </div>
-        <div class="stat-card stats-circle">
-          <p>50K+</p>
-          <p>Pairs Sold</p>
+        <div class="stats-circle">
+          <div class="stat-card">
+            <h3>50K+</h3>
+            <p>Pairs Sold</p>
+          </div>
         </div>
-        <div class="stat-card stats-circle">
-          <p>50+</p>
-          <p>Top Brands</p>
+        <div class="stats-circle">
+          <div class="stat-card">
+            <h3>50+</h3>
+            <p>Top Brands</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="brand-statement">
       <div class="brand-left">
-        <h2>Built for the Streets. Made for Greatness</h2>
-        <p>
+        <h2>
+          <span>Built for the Streets.</span> <span>Made for Greatness.</span>
+        </h2>
+        <p class="bs-p">
           We source the hottest kicks from the best brands in the game. Whether
           you're chasing classics or the latest heat, we've got the perfect pair
           for you.
         </p>
         <div class="bl-cards">
           <div class="bl-card">
-            <div></div>
-            <div>
+            <i class="ri-vip-diamond-fill"></i>
+            <div class="blc-text">
               <h4>Premium Quality</h4>
               <p>Carefully curated sneakers made with top-tier materials</p>
             </div>
           </div>
           <div class="bl-card">
-            <div></div>
-            <div>
+            <i class="ri-flashlight-fill"></i>
+            <div class="blc-text">
               <h4>Unbeatable Comfort</h4>
               <p>Designed for everyday wear, built for all-day comfort</p>
             </div>
@@ -137,22 +226,22 @@
         </div>
       </div>
       <div class="brand-right shoe-container">
-        <div class="br-ring">
-          <img
-            src="./assets/imgs/air-jordan-1-retro-black-toe-release-date.jpg"
-            alt=""
-          />
-        </div>
+        <img
+          src="./assets/imgs/air-jordan-1-retro-black-toe-release-date.jpg"
+          alt=""
+          width="550px"
+          height="550px"
+        />
       </div>
     </section>
     <section class="products">
       <div class="products-heading">
-        <p>Find Your Perfect Pair</p>
+        <h2>Find Your Perfect Pair</h2>
         <p>Shop the Collection</p>
       </div>
       <div class="products-cards">
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/sahej-brar-T31E6zBL_n0-unsplash.png"
               alt=""
@@ -160,11 +249,16 @@
           </div>
           <p class="product-name">Nike Air Force 1 Low Sneakers</p>
           <p class="product-price">$119.99</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/taylor-smith-aDZ5YIuedQg-unsplash.png"
               alt=""
@@ -172,12 +266,17 @@
           </div>
           <p class="product-name">Nike Air Jordan 1</p>
           <p class="product-price">$150.00</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
 
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/jan-vlacuha-92_wMoF-yds-unsplash.png"
               alt=""
@@ -185,22 +284,32 @@
           </div>
           <p class="product-name">Nike Air Jordan 4 Retro</p>
           <p class="product-price">$280.00</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
 
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img src="./assets/imgs/51s68jlLZlL._AC_SL1000_.png" alt="" />
           </div>
           <p class="product-name">Puma RS_X Mono Royal Saphire</p>
           <p class="product-price">$110.00</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
 
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/archer-allstars-rHOIOnWleY8-unsplash.png"
               alt=""
@@ -208,12 +317,17 @@
           </div>
           <p class="product-name">New Balance Fresh Foam Roav</p>
           <p class="product-price">$57.30</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
 
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/wengang-zhai-_fOL6ebfECQ-unsplash.png"
               alt=""
@@ -221,12 +335,17 @@
           </div>
           <p class="product-name">Nike Air Jordan 12 Retro Gym Red Sneakers</p>
           <p class="product-price">$109.99</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
 
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/piyush-haswani-asD3pM3lSkA-unsplash(1).png"
               alt=""
@@ -234,12 +353,17 @@
           </div>
           <p class="product-name">Nike Air Jordan 4 Retro Military Black</p>
           <p class="product-price">$210.00</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
 
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/usama-akram-s-gYAbQToXk-unsplash(1).png"
               alt=""
@@ -247,11 +371,16 @@
           </div>
           <p class="product-name">Nike 7 TB basketball shoes</p>
           <p class="product-price">$499.95</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/mana-akbarzadegan-kLnlaZJ4SMA-unsplash.png"
               alt=""
@@ -259,11 +388,16 @@
           </div>
           <p class="product-name">PUMA Women's Lia Sheer sneakers</p>
           <p class="product-price">$83.99</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/chris-lynch-ltqHOetiadA-unsplash.png"
               alt=""
@@ -273,18 +407,30 @@
             New Balance Fresh Foam X 1080v13 running shoes
           </p>
           <p class="product-price">$165.00</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
         <div class="product-card">
-          <div><img src="./assets/imgs/624232 (1).png" alt="" /></div>
+          <div class="pc-img">
+            <img src="./assets/imgs/624232 (1).png" alt="" />
+          </div>
           <p class="product-name">Adidas Streetball 2</p>
           <p class="product-price">$229.00</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
         <div class="product-card">
-          <div>
+          <div class="pc-img">
             <img
               src="./assets/imgs/MB.05-World-Tour-Basketball-Shoes-Unisex.png"
               alt=""
@@ -294,48 +440,80 @@
             Puma MB.05 X LaMelo Ball World Tour Sneakers
           </p>
           <p class="product-price">$130.99</p>
-          <button class="product-btn">Shop Now</button>
-          <button class="product-btn-success">Added to Cart</button>
+          <button class="product-btn">
+            <i class="ri-shopping-cart-line"></i><a href="">Shop Now</a>
+          </button>
+          <button class="product-btn success">
+            <i class="ri-check-line"></i>
+            <p>Added to Cart</p>
+          </button>
         </div>
       </div>
     </section>
     <section class="features">
-      <p>Why Choose Fresh Kicks?</p>
+      <h2 class="features-heading">Why Choose Fresh Kicks?</h2>
       <div class="features-cards">
         <div class="feature-card">
-          <div><img src="./assets/imgs/bhautik-patel-ui8yd5Qxv-Y-unsplash.png" alt="" /></div>
-          <div>
-            <p>Top Quality</p>
-            <p>Only the Best</p>
-            <p>
+          <div class="feature-img">
+            <img
+              src="./assets/imgs/wengang-zhai-_fOL6ebfECQ-unsplash.png"
+              alt=""
+              width="250px"
+              height="200px"
+            />
+          </div>
+          <div class="feature-content">
+            <p class="fc-heading">Top Quality</p>
+            <p class="fc-sub">Only the Best</p>
+            <p class="fc-p">
               We handpick every sneaker to ensure top quality, authenticity, and
               style. No fakes, no flows-just heat you can trust.
             </p>
-            <button><a href="">Learn More</a></button>
+            <button class="fc-btn"><a href="">Learn More</a></button>
           </div>
         </div>
         <div class="feature-card">
-          <div><img src="./assets/imgs/images (39).png" alt="" /></div>
-          <div>
-            <p>For Every Step</p>
-            <p>Style that Moves</p>
-            <p>
+          <div class="feature-img">
+            <img
+              src="./assets/imgs/jan-vlacuha-92_wMoF-yds-unsplash.png"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <div class="feature-content">
+            <p class="fc-heading">For Every Step</p>
+            <p class="fc-sub">Style that Moves</p>
+            <p class="fc-p">
               From iconic silhouettes to everyday essentials, find kicks tht
               match your vibe and move with you.
             </p>
-            <button><a href="">Learn More</a></button>
+            <button class="fc-btn"><a href="">Learn More</a></button>
           </div>
         </div>
       </div>
     </section>
     <section class="testimonials">
-      <h2>What Our Customers Say</h2>
+      <h2 class="t-heading">What Our Customers Say</h2>
       <div class="swiper testimonialSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="testimonial-card">
-              <h3>James T.</h3>
-              <p>
+              <div class="t-img">
+                <img
+                  src="https://randomuser.me/api/portraits/men/46.jpg"
+                  alt=""
+                />
+
+                <div class="profile"> <h3>Adams A.</h3>
+                  <div class="stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="review">
                 Fast Shipping. 100% authentic, and the quality is unmatched.
                 Definitely my-go-to sneaker store!
               </p>
@@ -344,8 +522,22 @@
 
           <div class="swiper-slide">
             <div class="testimonial-card">
-              <h3>Sarah R.</h3>
-              <p>
+              <div class="t-img">
+                <img
+                  src="https://randomuser.me/api/portraits/women/84.jpg"
+                  alt=""
+                />
+
+                <div class="profile">
+                  <h3>Sarah R.</h3>
+                  <div class="stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-half-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="review">
                 Amazing collection and top-notch customer service. Can't wait
                 for my next pair!
               </p>
@@ -354,8 +546,22 @@
 
           <div class="swiper-slide">
             <div class="testimonial-card">
-              <h3>Sapna K.</h3>
-              <p>
+              <div class="t-img">
+                <img
+                  src="https://randomuser.me/api/portraits/women/33.jpg"
+                  alt=""
+                />
+
+                <div class="profile">
+                  <h3>Sapna K.</h3>
+                  <div class="stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-line"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="review">
                 Fresh Kicks has become my go-to sneaker store. Everything
                 arrived authentic, clean, and properly packaged. The whole
                 shipping experience felt smooth and professional.
@@ -365,8 +571,21 @@
 
           <div class="swiper-slide">
             <div class="testimonial-card">
-              <h3>Daniel R.</h3>
-              <p>
+              <div class="t-img">
+                <img
+                  src="https://randomuser.me/api/portraits/men/79.jpg"
+                  alt=""
+                />
+
+                <div class="profile"> <h3>Kelvin I.</h3>
+                  <div class="stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="review">
                 The variety of sneakers on this site is crazy. I found pairs
                 that were sold out almost everywhere else, and the comfort
                 exceeded my expectations.
@@ -375,8 +594,19 @@
           </div>
           <div class="swiper-slide">
             <div class="testimonial-card">
-              <h3>JJesupemi A.</h3>
-              <p>
+              <div class="t-img">
+                <img
+                  src="https://randomuser.me/api/portraits/lego/3.jpg"
+                  alt=""
+                />
+               
+                <div class="profile"> <h3>Jesupemi A.</h3><div class="stars">
+                  <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                  ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                  ><i class="ri-star-fill"></i></div>
+                </div>
+              </div>
+              <p class="review">
                 I was honestly surprised by how fast the delivery was. The
                 sneakers looked even better in person and the quality feels
                 completely premium. Definitely ordering again.
@@ -384,27 +614,26 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class=" sb swiper-button-prev"></div>
+        <div class="sb swiper-button-next"></div>
       </div>
     </section>
     <section class="newsletter">
-      <div>
-        <div>
-          <img src="" alt="" />
+      <div class="left-news">
+      
+          <img src="./assets/imgs/ox-street-BWPqHZBhMVA-unsplash(2).png" alt="" width="500px" height="500px"/>
         </div>
-        <div></div>
-      </div>
+       
       <p class="newsletter-text">Our Newsletter</p>
-      <div>
-        <p>Be the first to know about new drops & exclusive offers</p>
-        <h3>Stay Fresh. Stay Ahead</h3>
-        <p>
+      <div class="right-news">
+        <p class="news-sub">Be the first to know about new drops & exclusive offers</p>
+        <h3 class="news-head">Stay Fresh. Stay Ahead</h3>
+        <p class="news-p">
           Subscribe to get the latest updates on new arrivals, restocks and
           special deals.
         </p>
-        <div>
-          <input type="email" name="" id="" /><input
+        <div class="news-input">
+          <input type="email" name="" id="" placeholder="Enter your email" /><input
             type="submit"
             value="Subscribe"
           />
@@ -414,16 +643,16 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">
-          <p>Fresh Kicks <span>.</span></p>
-          <p>
+          <p class="footer-logo">Fresh Kicks <span>.</span></p>
+          <p class="footer-text">
             Step into style with the freshest sneakers from top brands. Stay
             ahead
           </p>
           <div class="footer-icons">
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-facebook-box-fill"></i></a>
+            <a href=""><i class="ri-linkedin-box-fill"></i></a>
+            <a href=""><i class="ri-twitter-x-line"></i></a>
           </div>
         </div>
         <div class="footer-middle">
@@ -432,25 +661,25 @@
             <li>All Products</li>
             <li>New Arrivals</li>
             <li>Best Sellers</li>
-            <li><Sale/li>
+            <li>Sale</li>
           </ul>
         </div>
         <div class="footer-middle">
           <h3>Help</h3>
           <ul>
             <li>FAQs</li>
-            <li>Shipping & Delivery</li>
+            <li>Shipping</li>
             <li>Returns</li>
             <li>Size Guide</li>
           </ul>
         </div>
         <div class="footer-right">
-            <h3>Stay Connected</h3>
-            <input type="email" placeholder="Enter your email">
-            <input type="submit" value="Subscribe">
+          <h3>Stay Connected</h3>
+          <input type="email" placeholder="Enter your email" />
+          <input type="submit" value="Subscribe" />
         </div>
       </div>
-      <p>2026 Fresh Licks. All rights reserved.</p>
+      <p class="copyright">2026 Fresh Licks. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>

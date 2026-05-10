@@ -15,14 +15,14 @@ ul,ol{
     list-style: none;
 }
 img{
-    max-width: 100%;
+    /* width: 500px; */
     display: block;
 }
 button{
     cursor: pointer;
-    border: none;
-    background: none;
-    font-family: inherit;
+    /* border: none; */
+    /* background: none; */
+    /* font-family: inherit; */
 }
 input{
     font-family: inherit;
