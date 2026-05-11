@@ -40,11 +40,11 @@
       <div class="nav-logo">Fresh Kicks <span>.</span></div>
       <div class="nav-links">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Collections</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </div>
       <div class="nav-actions">
@@ -53,19 +53,23 @@
           <i class="ri-shopping-bag-line"></i> <span>0</span>
         </div>
       </div>
-      <div class="harmburger mobile-nav" style="display: none">
-        <i class="ri-menu-line"></i>
-        <div class="icon-close"><i class="ri-close-line"></i></div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Collections</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <div class=" mobile-nav">
+        <i class="ri-menu-line harmburger" id="harmburger"></i>
+                <i class="ri-close-line icon-close"></i>
+
       </div>
-    </nav>
-    <section class="hero">
+      
+    </nav><div class="mobile nav-links" id="mobile-nav-links" >
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#signIn">Sign In</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+      </div><div class="nav-overlay" id="navOverlay"></div>
+    <section class="hero" id="hero">
       <div class="hero-heading">
         <i class="ri-shining-2-fill sparkle"></i>
         <p>Step into Style. Stay Ahead</p>
@@ -170,7 +174,7 @@
       </div>
       <div class="glow"></div>
     </section>
-    <section class="stats">
+    <section class="stats" id="stats">
       <div class="stats-text">
         <h2>Trusted by sneakerheads worldwide</h2>
         <p>
@@ -198,7 +202,7 @@
         </div>
       </div>
     </section>
-    <section class="brand-statement">
+    <section class="brand-statement" id="about">
       <div class="brand-left">
         <h2>
           <span>Built for the Streets.</span> <span>Made for Greatness.</span>
@@ -234,7 +238,7 @@
         />
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
       <div class="products-heading">
         <h2>Find Your Perfect Pair</h2>
         <p>Shop the Collection</p>
@@ -450,7 +454,7 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section class="features" id="features">
       <h2 class="features-heading">Why Choose Fresh Kicks?</h2>
       <div class="features-cards">
         <div class="feature-card">
@@ -493,7 +497,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <h2 class="t-heading">What Our Customers Say</h2>
       <div class="swiper testimonialSwiper">
         <div class="swiper-wrapper">
@@ -505,7 +509,8 @@
                   alt=""
                 />
 
-                <div class="profile"> <h3>Adams A.</h3>
+                <div class="profile">
+                  <h3>Adams A.</h3>
                   <div class="stars">
                     <i class="ri-star-fill"></i><i class="ri-star-fill"></i
                     ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
@@ -577,7 +582,8 @@
                   alt=""
                 />
 
-                <div class="profile"> <h3>Kelvin I.</h3>
+                <div class="profile">
+                  <h3>Kelvin I.</h3>
                   <div class="stars">
                     <i class="ri-star-fill"></i><i class="ri-star-fill"></i
                     ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
@@ -599,11 +605,14 @@
                   src="https://randomuser.me/api/portraits/lego/3.jpg"
                   alt=""
                 />
-               
-                <div class="profile"> <h3>Jesupemi A.</h3><div class="stars">
-                  <i class="ri-star-fill"></i><i class="ri-star-fill"></i
-                  ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
-                  ><i class="ri-star-fill"></i></div>
+
+                <div class="profile">
+                  <h3>Jesupemi A.</h3>
+                  <div class="stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
                 </div>
               </div>
               <p class="review">
@@ -614,33 +623,41 @@
             </div>
           </div>
         </div>
-        <div class=" sb swiper-button-prev"></div>
+        <div class="sb swiper-button-prev"></div>
         <div class="sb swiper-button-next"></div>
       </div>
     </section>
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
       <div class="left-news">
-      
-          <img src="./assets/imgs/ox-street-BWPqHZBhMVA-unsplash(2).png" alt="" width="500px" height="500px"/>
-        </div>
-       
+        <img
+          src="./assets/imgs/ox-street-BWPqHZBhMVA-unsplash(2).png"
+          alt=""
+          width="500px"
+          height="500px"
+        />
+      </div>
+
       <p class="newsletter-text">Our Newsletter</p>
       <div class="right-news">
-        <p class="news-sub">Be the first to know about new drops & exclusive offers</p>
+        <p class="news-sub">
+          Be the first to know about new drops & exclusive offers
+        </p>
         <h3 class="news-head">Stay Fresh. Stay Ahead</h3>
         <p class="news-p">
           Subscribe to get the latest updates on new arrivals, restocks and
           special deals.
         </p>
         <div class="news-input">
-          <input type="email" name="" id="" placeholder="Enter your email" /><input
-            type="submit"
-            value="Subscribe"
-          />
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter your email"
+          /><input type="submit" value="Subscribe" />
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer-container">
         <div class="footer-left">
           <p class="footer-logo">Fresh Kicks <span>.</span></p>
@@ -648,7 +665,7 @@
             Step into style with the freshest sneakers from top brands. Stay
             ahead
           </p>
-          <div class="footer-icons">
+          <div class="desktop footer-icons">
             <a href=""><i class="ri-instagram-fill"></i></a>
             <a href=""><i class="ri-facebook-box-fill"></i></a>
             <a href=""><i class="ri-linkedin-box-fill"></i></a>
@@ -658,19 +675,19 @@
         <div class="footer-middle">
           <h3>Shop</h3>
           <ul>
-            <li>All Products</li>
-            <li>New Arrivals</li>
-            <li>Best Sellers</li>
-            <li>Sale</li>
+            <li><a href="">All Products</a></li>
+            <li><a href="">New Arrivals</a></li>
+            <li><a href="">Best Sellers</a></li>
+            <li><a href="">Sale</a></li>
           </ul>
         </div>
         <div class="footer-middle">
           <h3>Help</h3>
           <ul>
-            <li>FAQs</li>
-            <li>Shipping</li>
-            <li>Returns</li>
-            <li>Size Guide</li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">Size Guide</a></li>
           </ul>
         </div>
         <div class="footer-right">
@@ -679,6 +696,12 @@
           <input type="submit" value="Subscribe" />
         </div>
       </div>
+       <div class="mobile footer-icons">
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-facebook-box-fill"></i></a>
+            <a href=""><i class="ri-linkedin-box-fill"></i></a>
+            <a href=""><i class="ri-twitter-x-line"></i></a>
+          </div>
       <p class="copyright">2026 Fresh Licks. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

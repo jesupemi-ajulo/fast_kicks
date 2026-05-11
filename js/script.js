@@ -14,6 +14,7 @@ const swiper = new Swiper('.myswiper', {
 const tswiper = new Swiper(".testimonialSwiper", {
   slidesPerView: 2,
   spaceBetween: 10,
+
   loop: true,
   autoplay: {
     delay: 3000,
@@ -28,3 +29,18 @@ const tswiper = new Swiper(".testimonialSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+
+const harmburger=document.querySelector('#harmburger')
+const mobileNavLink=document.querySelector('#mobile-nav-links')
+const navOverlay=document.querySelector('#navOverlay')
+harmburger.addEventListener('click',()=>{
+mobileNavLink.classList.toggle('open')
+navOverlay.classList.toggle('open')
+})
+navOverlay.addEventListener('click',()=>{
+  mobileNavLink.classList.remove('open')
+  navOverlay.classList.remove('open')
+})
