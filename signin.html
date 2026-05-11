@@ -1,11 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="si-body">
+    <div class="si-container" id="siContainer">
+      <div class="forms-wrap">
+        <div class="form-container form-container-signup" >
+          <h2>Create Account</h2>
+          <div class="social-btns">
+            <button class="social-btn">
+              <img
+                src="https://www.svgrepo.com/show/475656/google-color.svg"
+                width="30px"
+                alt=""
+              /> </button><button class="social-btn">
+              <img
+                src="https://www.svgrepo.com/show/443275/brand-nike.svg"
+                width="30px"
+                alt=""
+              /></button>
+           
+            <button class="social-btn">
+              <img
+                src="https://www.svgrepo.com/show/503173/apple-logo.svg"
+                width="30px"
+                alt=""
+              />
+            </button>
+          </div>
+          <p class="si-sub">or use your email for registration:</p>
+          <div class="si-input-group">
+            <input type="text" placeholder="Name" />
+            <i class="ri-user-line"></i>
+          </div>
+          <div class="si-input-group">
+            <input type="email" placeholder="Email" />
+            <i class="ri-mail-line"></i>
+          </div>
+          <div class="si-input-group">
+            <input type="password" placeholder="Password" />
+            <i class="ri-lock-2-line"></i>
+          </div>
+          <button class="si-btn"><a href="">Sign up</a></button>
+        </div>
+
+        <div class="form-container form-container-signin" >
+          <h2>Sign in</h2>
+          <div class="social-btns">
+            <button class="social-btn">
+               <img
+                src="https://www.svgrepo.com/show/475656/google-color.svg"
+                width="30px"
+                alt=""
+              />
+            </button>
+            <button class="social-btn">
+              <img
+                src="https://www.svgrepo.com/show/443275/brand-nike.svg"
+                width="30px"
+                alt=""
+              />
+            </button>
+            <button class="social-btn">
+              <img
+                src="https://www.svgrepo.com/show/503173/apple-logo.svg"
+                width="30px"
+                alt=""
+              />
+            </button>
+          </div>
+          <p class="si-sub">or use your email to sign in:</p>
+          <div class="si-input-group">
+            <input type="email" placeholder="Email" />
+            <i class="ri-mail-line"></i>
+          </div>
+          <div class="si-input-group">
+            <input type="password" placeholder="Password" />
+            <i class="ri-lock-2-line"></i>
+          </div>
+          <a href="#" class="si-forgot">Forgot your password</a>
+          <button class="si-btn"><a href="">Sign In</a></button>
+        </div>
+      </div>
+      <!-- overlay -->
+      <div id="overlay-container" class="overlay-container">
+        <div class="si-overlay">
+          <!-- Welcome back state -->
+          <div class="overlay-content left-overlay" id="overlayContent">
+            <h3 class="si-overlay-title">Welcome Back!</h3>
+            <p class="si-overlay-text">
+              Continue your sneaker journey with exclusive drops and heat.
+            </p>
+            <button class="si-btn-ghost" id="fcSignin">Sign in</button>
+            <img
+              src="./assets/imgs/ox-street-BWPqHZBhMVA-unsplash(1).png"
+              alt=""
+              class="shoe"
+              width="200px"
+            />
+          </div>
+          <div class="overlay-content right-overlay" id="overlayContent">
+            <h3 class="si-overlay-title">Hello, Sneakerhead!</h3>
+            <p class="si-overlay-text">
+              Join the culture and explore premium sneakers.
+            </p>
+            <button class="si-btn-ghost" id="fcSignup">Sign up</button>
+            <img
+              src="./assets/imgs/images (40).png"
+              alt=""
+              class="shoe"
+              width="200px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
